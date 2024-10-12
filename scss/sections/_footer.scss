@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90px; 
+    background: url(../../assets/contact.png);
+    background-size: cover;
+    background-position: bottom;
+    align-items: center;
+    filter: brightness(70%);
+    
+}
+.footer__navbar{
+    display: flex;
+    .footer__logo{
+        flex: 1;
+    }
+    .footer__collection{
+        display: flex;
+        gap: 41px;
+    }
+    .footer__link{
+        color: #b3b4b2;
+    }
+}
+@media (max-width: 500px){
+    .footer__navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 374px){
+    .footer{
+        height: auto;
+    }
+    .footer__collection{
+        flex-direction: column;
+        align-items: center;
+    }
+}

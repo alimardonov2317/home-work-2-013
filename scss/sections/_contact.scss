@@ -1,0 +1,47 @@
+.contact{
+    background: url(../../assets/contact.png);
+    height: 289px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .global__title{
+        font-size: 25px;
+        color: #ffffff;
+        font-weight: normal;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__form{
+        margin-top: 20px;
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+    }
+    &__input{
+        width: 100%;
+        padding: 18px 0;
+        text-indent: 35px;
+        border-radius: 5px 0 0 5px;
+    }
+    &__btn{
+        padding: 18px 44px;
+        border-radius: 0 5px 5px 0;
+        background: rgba(255, 255, 255, 0.28);
+        color: #FFF;
+    }
+}
+@media (max-width: 374px){
+       .contact{
+        &__input{
+            padding: 15px 0;
+            font-size: 10px;
+            text-indent: 10px;
+        }
+        &__btn{
+            padding: 0 15px;
+        }
+       }
+}
